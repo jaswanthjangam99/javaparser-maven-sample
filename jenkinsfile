@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo Hello World
-                bat mvn test
+                echo 'Hello World'
+                bat 'mvn test'
                 bat 'mvn test clean'
             }
         }
